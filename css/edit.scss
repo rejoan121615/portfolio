@@ -1,3 +1,10 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+// header social 
 .header__social {
     .header__link {
         img {
@@ -17,7 +24,7 @@
         max-width: 650px;
         height: 400px;
         margin-bottom: -70px;
-        // responsive 
+        // responsive
         @media screen and (min-width: 769px) {
             height: 330px;
         }
@@ -89,7 +96,7 @@
     }
 }
 
-// project filter nav 
+// project filter nav
 #project-filter {
     @media only screen and (min-width: 768px) {
         display: flex;
@@ -106,3 +113,10 @@
         max-width: 1000px;
     }
 }
+
+// send mail 
+
+
+
+
+

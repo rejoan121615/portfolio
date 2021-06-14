@@ -295,16 +295,14 @@ getAllFilterBtn.forEach((btn, index) => {
         let btnValue = btn.innerHTML.toLocaleLowerCase().replace(/\s+/g, "");
         let tagValue = getAllProjectList[index]
             .getAttribute("data-filter")
-        .slice("webpage")
-      console.log(btnValue);
-      console.log(tagValue)
-      getAllProjectList.forEach((item) => {
-        if (item.getAttribute('data-filter').includes(btnValue)) {
-          item.style.display = 'block';
-          item.style.opacity = '1';
-          item.style.transform = 'translateY(0)';
-          }
-        })
+            .slice("webpage");
+        getAllProjectList.forEach((item) => {
+            if (item.getAttribute("data-filter").includes(btnValue)) {
+                item.style.display = "block";
+                item.style.opacity = "1";
+                item.style.transform = "translateY(0)";
+            }
+        });
     };
 });
 
@@ -313,3 +311,11 @@ const hideAll = (list) => {
         item.style.display = "none";
     });
 };
+
+// smoothin scrolling
+
+document.querySelector("#proLink").addEventListener("click", () => {
+    document.querySelector("#cases").scrollIntoView({
+        behavior: "smooth",
+    });
+});
