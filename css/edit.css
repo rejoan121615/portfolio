@@ -88,4 +88,22 @@
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  #project-filter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #project-filter .cases__link {
+    padding-top: 10px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (min-width: 912px) {
+  #project-filter {
+    max-width: 1000px;
+  }
+}
+
 /*# sourceMappingURL=edit.css.map */

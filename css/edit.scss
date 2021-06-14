@@ -88,3 +88,21 @@
         }
     }
 }
+
+// project filter nav 
+#project-filter {
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+        .cases__link {
+            padding-top: 10px;
+            margin-right: 0px;
+        }
+    }
+
+    @media only screen and (min-width: 912px) {
+        max-width: 1000px;
+    }
+}
